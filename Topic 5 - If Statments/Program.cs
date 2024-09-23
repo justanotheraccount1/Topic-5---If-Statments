@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
             //Sam Ahrens 09/18/24
-            string dinosaur, magicWord;
-            int age, confirm;
-            double temp;
+            string dinosaur, magicWord, answer;
+            int age, confirm, grade;
+            double temp, bet;
             int people = 20;
             int cats = 20;
             int dogs = 15;
@@ -80,7 +80,64 @@
 
 
             //Part 2
-            
+            //Console.WriteLine("What was your grade?");
+            //int.TryParse(Console.ReadLine(), out grade);
+            //if (grade < 50)
+            //    Console.WriteLine("You failed");
+            //else if (grade < 65)
+            //    Console.WriteLine("You got a D");
+            //else if (grade < 75)
+            //    Console.WriteLine("You got a C");
+            //else if (grade < 85)
+            //    Console.WriteLine("You got a B");
+            //else
+            //    Console.WriteLine("You got an A");
+
+
+            //Console.WriteLine("How old are you?");
+            //int.TryParse(Console.ReadLine(), out age);
+            //if (age >= 16)
+            //    Console.WriteLine("The roads are not safe");
+            //else
+            //    Console.WriteLine("I can drive without fear!");
+
+            //Console.WriteLine("How much will you bet?");
+            //if (double.TryParse(Console.ReadLine(), out bet))
+            //{
+
+            //    Console.WriteLine("You bet " + bet.ToString("C"));
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input");
+            //    Console.WriteLine("You will bet the minimum input");
+            //    bet = 1;
+            //}
+
+            Console.WriteLine("What is the largest country in the world?");
+            Console.WriteLine();
+            Console.WriteLine("A). Canada");
+            Console.WriteLine("B). Russia");
+            Console.WriteLine("C). USA");
+            Console.WriteLine("D). China");
+            Console.WriteLine();
+            Console.WriteLine("Input the letter as your answer...");
+            answer = Console.ReadLine();
+            if (answer == "a")
+                Console.WriteLine("Good try, but incorrect. Canada is the second largest");
+            else if (answer == "b")
+                Console.WriteLine("That is correct");
+            else if (answer == "c")
+                Console.WriteLine("Incorrect. The US is not the largest");
+            else if (answer == "d")
+                Console.WriteLine("Incorrect. China is actually the smallest of the 4");
+            else
+
+
+
+
+
+
 
 
 
