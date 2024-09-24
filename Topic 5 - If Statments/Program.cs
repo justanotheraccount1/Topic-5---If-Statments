@@ -5,13 +5,14 @@
         static void Main(string[] args)
         {
             //Sam Ahrens 09/18/24
+            bool working;
             string dinosaur, magicWord, answer;
             int age, confirm, grade;
-            double temp, bet;
+            double temp, bet, money;
             int people = 20;
             int cats = 20;
             int dogs = 15;
-
+            Console.ForegroundColor = ConsoleColor.White;
             //Part 1
             //Console.WriteLine("People:" + people + " Cats:" + cats + " Dogs:" + dogs);
             //if (people < cats)
@@ -60,13 +61,13 @@
             //int.TryParse(Console.ReadLine(), out age);
             //if (age <= 0)
             //    Console.WriteLine("How are you even typing?");
-            //if (age <= 15)
+            //else if (age < 16)
             //    Console.WriteLine("You can't drive");
-            //if (age <= 17)
-            //    Console.WriteLine("You can't vote");
-            //if (age <= 24)
-            //    Console.WriteLine("You can't rent a car");
-            //if (age >= 25)
+            //else if (age < 18)
+            //    Console.WriteLine("You can drive, but not vote");
+            //else if (18 <= age)
+            //    Console.WriteLine("You can vote, but you can't rent a car");
+            //else if (age >= 25)
             //    Console.WriteLine("You can do anything legal");
 
             //Console.WriteLine("Please enter a freezing temperature of water:");
@@ -114,24 +115,68 @@
             //    bet = 1;
             //}
 
-            Console.WriteLine("What is the largest country in the world?");
-            Console.WriteLine();
-            Console.WriteLine("A). Canada");
-            Console.WriteLine("B). Russia");
-            Console.WriteLine("C). USA");
-            Console.WriteLine("D). China");
-            Console.WriteLine();
-            Console.WriteLine("Input the letter as your answer...");
+            //Console.WriteLine("What is the largest country in the world?");
+            //Console.WriteLine();
+            //Console.WriteLine("A). Canada");
+            //Console.WriteLine("B). Russia");
+            //Console.WriteLine("C). USA");
+            //Console.WriteLine("D). China");
+            //Console.WriteLine();
+            //Console.ForegroundColor = ConsoleColor.Green;
+            //Console.WriteLine("Input the letter as your answer...");
+            //Console.ForegroundColor = ConsoleColor.White;
+            //answer = Console.ReadLine();
+            //if (answer.ToLower() == "a")
+            //    Console.WriteLine("Good try, but incorrect. Canada is the second largest");
+            //else if (answer.ToLower() == "b")
+            //    Console.WriteLine("That is correct");
+            //else if (answer.ToLower() == "c")
+            //    Console.WriteLine("Incorrect. The US is not the largest");
+            //else if (answer.ToLower() == "d")
+            //    Console.WriteLine("Incorrect. China is actually the smallest of the 4");
+            //else
+            //    Console.WriteLine("That is an invalid answer. Please input one of the 4 options.");
+
+
+
+            //Console.WriteLine("Please input a temperature in degrees Celcius:");
+            //double.TryParse(Console.ReadLine(), out temp);
+            //if (temp >= 100)
+            //    Console.WriteLine("the water is a gas");
+            //else if (temp >= 0)
+            //    Console.WriteLine("The water is a liquid");
+            //else
+            //    Console.WriteLine("the water is a solid");
+
+
+            //Part 3
+
+            //Console.WriteLine("How old are you?");
+            //int.TryParse(Console.ReadLine(), out age);
+            //if (age >= 13 && age <= 18)
+            //    Console.WriteLine("You are a teen");
+            //else
+            //    Console.WriteLine("You are not a teen");
+
+            Console.WriteLine("Hey, are you working tonight? Yes or No");
             answer = Console.ReadLine();
-            if (answer == "a")
-                Console.WriteLine("Good try, but incorrect. Canada is the second largest");
-            else if (answer == "b")
-                Console.WriteLine("That is correct");
-            else if (answer == "c")
-                Console.WriteLine("Incorrect. The US is not the largest");
-            else if (answer == "d")
-                Console.WriteLine("Incorrect. China is actually the smallest of the 4");
+            if (answer.ToLower() == "yes")
+                Console.WriteLine("Shoot, I wanted to go to a movie with you tonight");
+            else if (answer.ToLower() == "no")
+            {
+                Console.WriteLine("Great! How much money do you have on you right now?");
+                Console.Write("$");
+                double.TryParse(Console.ReadLine(), out money);
+                if (money >= 20)
+                    Console.WriteLine("Great! We should go to the movies together.");
+                else if (money < 20)
+                    Console.WriteLine("AHGHHGH!!! I really wanted to go to the movies with you, but you don't have enough to come. :(");
+
+            }
             else
+                Console.WriteLine("That's not an answer you IDIOT!");
+
+
 
 
 
