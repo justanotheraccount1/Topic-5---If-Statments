@@ -6,7 +6,7 @@
         {
             //Sam Ahrens 09/18/24
             bool working;
-            string dinosaur, magicWord, answer;
+            string dinosaur, magicWord, answer, guess1, guess2, guess3, guess4, guess5, password, topping, animal, weather;
             int age, confirm, grade;
             double temp, bet, money;
             int people = 20;
@@ -158,23 +158,96 @@
             //else
             //    Console.WriteLine("You are not a teen");
 
-            Console.WriteLine("Hey, are you working tonight? Yes or No");
-            answer = Console.ReadLine();
-            if (answer.ToLower() == "yes")
-                Console.WriteLine("Shoot, I wanted to go to a movie with you tonight");
-            else if (answer.ToLower() == "no")
-            {
-                Console.WriteLine("Great! How much money do you have on you right now?");
-                Console.Write("$");
-                double.TryParse(Console.ReadLine(), out money);
-                if (money >= 20)
-                    Console.WriteLine("Great! We should go to the movies together.");
-                else if (money < 20)
-                    Console.WriteLine("AHGHHGH!!! I really wanted to go to the movies with you, but you don't have enough to come. :(");
+            //Console.WriteLine("Hey, are you working tonight? Yes or No");
+            //answer = Console.ReadLine();
+            //if (answer.ToLower() == "yes")
+            //    Console.WriteLine("Shoot, I wanted to go to a movie with you tonight");
+            //else if (answer.ToLower() == "no")
+            //{
+            //    Console.WriteLine("Great! How much money do you have on you right now?");
+            //    Console.Write("$");
+            //    double.TryParse(Console.ReadLine(), out money);
+            //    if (money >= 20)
+            //        Console.WriteLine("Great! We should go to the movies together.");
+            //    else if (money < 20)
+            //        Console.WriteLine("AHGHHGH!!! I really wanted to go to the movies with you, but you don't have enough to come. :(");
 
-            }
+            //}
+            //else
+            //    Console.WriteLine("That's not an answer you IDIOT!");
+
+
+            //password = "password";
+            //Console.WriteLine("Please enter the password:");
+            //guess1 = Console.ReadLine().ToLower();
+            //if (guess1 == password)
+            //    Console.WriteLine("Access Granted");
+            //else
+            //{
+            //    Console.WriteLine("Try again:");
+            //    guess2 = Console.ReadLine().ToLower();
+            //    if (guess2 == password)
+            //        Console.WriteLine("Access Granted");
+            //    else
+            //    {
+            //        Console.WriteLine("Try again:");
+            //        guess3 = Console.ReadLine().ToLower();
+            //        if (guess3 == password)
+            //            Console.WriteLine("Access Granted");
+            //        else
+            //        {
+            //            Console.WriteLine("Try again:");
+            //            guess4 = Console.ReadLine().ToLower();
+            //            if (guess4 == password)
+            //                Console.WriteLine("Access Granted");
+            //            else
+            //            {
+            //                Console.WriteLine("Try again:");
+            //                guess5 = Console.ReadLine().ToLower();
+            //                if (guess5 == password)
+            //                    Console.WriteLine("Access Granted");
+            //                else
+            //                {
+            //                    Console.WriteLine("Access Denied");
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine("What is your favorite pizza topping?");
+            //topping = Console.ReadLine().ToLower();
+            //if (topping == "pepperoni" || topping == "bacon")
+            //    Console.WriteLine("yum");
+            //else
+            //    Console.WriteLine("I don't like " + topping);
+
+
+            //Console.WriteLine("How old are you?");
+            //int.TryParse(Console.ReadLine(), out age);
+            //if (age >= 60 || age <= 12)
+            //    Console.WriteLine("the ticket costs $2.50");
+            //else
+            //    Console.WriteLine("the ticket costs $3.50");
+
+
+            //Console.WriteLine("What is your favorite animal?");
+            //animal = Console.ReadLine().ToLower();
+            //if (animal == "cat" || animal == "dog")
+            //    Console.WriteLine("Me too");
+            //else
+            //    Console.WriteLine("To each their own.");
+
+
+            Console.WriteLine("is it sunny or cloudy?");
+            weather = Console.ReadLine().ToLower();
+            Console.WriteLine("What is the temperature?");
+            double.TryParse(Console.ReadLine(), out temp);
+            if (temp >= 25 || weather == "sunny")
+                Console.WriteLine("Swim time");
             else
-                Console.WriteLine("That's not an answer you IDIOT!");
+                Console.WriteLine("Nap time");
+
 
 
 
